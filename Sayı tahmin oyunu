@@ -1,0 +1,35 @@
+oyunaDevamEt=1;%oyuna devam et sonsuz döngüsü
+tahmineDevamEt=1;%tahmine devam et sonsuz değişkeni
+while oyunaDevamEt
+    clc;
+    tahminSayaci=0;
+    rastgeleSayi=round(1000+8999*rand(1));
+    disp('Oyun başlıyor 1000-9999 arası rastgele sayı üretildi.');
+    while tahmineDevamEt
+        tahmin=input('Tahminizi giriniz:');
+        tahminSayaci=tahminSayaci+1;
+        while (tahmin<1000)||(tahmin>9999)
+            tahmin=input('1000-9999 arası olmalı:');
+            tahminSayaci=tahminSayaci+1;
+        end
+        if tahmin==rastgeleSayi
+            fprintf('Tebrikler %d. tahminde buldun.',tahminSayaci);
+            secenek=input('Yeni oyun (E/e ya da H/h)=','s');
+            if (secenek=='E')||(secenek=='e')
+                %içteki tahmine devam et sonsuz döngüsü sonlandı
+                % ve oyun yeniden başladı
+                break
+            else
+                %dıştaki oyuna devam et döngüsü sonlandı
+                %değişkeni 0 yap
+                oyunaDevamEt=0;
+                break;%içteki tahmine devam et döngüsü sonlandı
+            end
+        elseif tahmin<rastgeleSayi
+            disp('Küçük sayı girdiniz.');
+        else
+            disp('Büyük sayı girdiniz.');
+        end
+    end%tahmine devam et döngüsü
+end%oyuna devam et dngüsü
+                
