@@ -1,0 +1,10 @@
+function sonuc = CiftSayiMi( sayi )
+%CİFTSAYİMİ Summary of this function goes here
+if mod(sayi,2)==0
+    sonuc=1;
+else
+    sonuc=0;
+end
+
+
+end
