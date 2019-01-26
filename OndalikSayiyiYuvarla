@@ -1,0 +1,2 @@
+function yuvarlanmisSayi=OndalikSayiyiYuvarla(sayi,basamak)
+yuvarlanmisSayi=round(sayi*(10^basamak))/(10^basamak);
