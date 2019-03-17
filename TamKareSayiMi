@@ -1,0 +1,11 @@
+function sonuc=TamKareSayiMi(sayi)
+if sayi>=1
+    if TamSayiMi(sqrt(sayi))%1/0 döndüren alt fonksiyon
+        sonuc=1;
+    else
+        sonuc=0;
+    end
+else
+    sonuc=0;%parametre pozitif olmalı
+end
+end
