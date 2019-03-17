@@ -1,0 +1,13 @@
+function sonuc=DiziElemanlariBelirliAraliktaMi(A,alt,ust)
+%dizi elemanlarının alt ve üst aralıkta olduğunu kabul edip aksine örnek
+%bulmaya çalışıyoruz
+sonuc=1;
+diziBoyutu=length(A);
+for i=1:diziBoyutu
+    if (A(i)<alt)||(A(i)>ust)
+        %alt lim. küçük üst lim. büyük eleman varsa yanlış 
+        sonuc=0;
+        break;
+    end
+end
+      
