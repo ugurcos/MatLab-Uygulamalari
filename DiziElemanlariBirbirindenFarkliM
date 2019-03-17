@@ -1,0 +1,15 @@
+function sonuc=DiziElemanlariBirbirindenFarkliMi(A)
+sonuc=1; %dizi elemanları birbirinden farkı
+diziBoyutu=length(A);
+for i=1:(diziBoyutu-1)
+    for j=(i+1):diziBoyutu
+        %aynı elemandan 2 tane var ise
+        if A(i)==A(j)
+            sonuc=0;%kabulu değiştir
+            %daha fazla kontrole gerek yok
+            return;
+        end
+    end
+end
+           
+            
