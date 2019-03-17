@@ -1,0 +1,13 @@
+function sayac = DizidekiTeklerinSayisiniHesapla( A )
+%DİZİDEKİTEKLERİNSAYİSİNİHESAPLA Summary of this function goes here
+%   Detailed explanation goes here
+sayac=0;
+diziBoyutu=length(A);
+for i=1:diziBoyutu
+    if TekSayiMi(A(i))
+        sayac=sayac+1;
+    end
+end
+
+end
+
