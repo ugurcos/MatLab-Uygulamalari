@@ -1,0 +1,10 @@
+function [enCokTekrarlananDeger tekrarSayisi]=...
+    DizininEnCokTekrarlananElemaniniBul(A)
+diziBoyutu=length(A);
+[enBuyuk,~]=DizininMaksimumunuVeIndisiniBul(A);%alt fonksiyon
+tekrarDizisi=zeros(1,enBuyuk);
+for i=1:diziBoyutu
+    tekrarDizisi(A(i))=tekrarDizisi(A(i))+1;
+end
+[tekrarSayisi enCokTekrarlananDeger]=...
+    DizininMaksimumunuVeIndisiniBul(tekrarDizisi);
