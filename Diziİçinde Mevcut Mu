@@ -1,0 +1,10 @@
+function bulundu=DizininIcindeMevcutMu(dizi,eleman)%fonksiyon 1eleman var veya 0eleman yok çevirir
+bulundu=0; %dizide yok kabul ediyoruz
+diziBoyutu=length(dizi);
+for i=1:diziBoyutu
+    if dizi(i)==eleman
+        %bulduysak dur
+        bulundu=1;
+        break;
+    end
+end
