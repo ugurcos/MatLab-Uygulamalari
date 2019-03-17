@@ -1,0 +1,9 @@
+function toplam=DizidekiNegatifTeklerinToplaminiHesapla(A)
+toplam=0;
+diziBoyutu=length(A);
+for i=1:diziBoyutu
+    if (A(i)<0)&&(mod(A(i),2)==1)
+        toplam=toplam+A(i);
+    end
+end
+end
