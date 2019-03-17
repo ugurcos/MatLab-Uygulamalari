@@ -1,0 +1,21 @@
+function sonuc=DiziIcerisindeMevcutMu(A,B)
+sonuc=0;% dizi içinde olmadı kabülü yaptık
+diziBoyutuA=length(A);
+diziBoyutuB=length(B);
+if diziBoyutuB<=diziBoyutuA %b anın en kötü sağındadır
+    for i=1:(diziBoyutuA-diziBoyutuB+1)
+        %b anın i. indisinden başlasın
+        muhtemelenMevcut=1;
+        for j=1:diziBoyutuB
+            %1 aksine örnek yeterli
+            if A(i+j-1)~=B(j)
+            muhtemelenMevcut=0;
+            break;
+        end
+    end
+    if muhtemelenMevcut==1
+        sonuc=1;
+        break;
+    end
+    end
+end
