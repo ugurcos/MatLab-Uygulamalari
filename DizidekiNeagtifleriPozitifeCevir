@@ -1,0 +1,8 @@
+%diziyi işleyip aynı diziyi geriye döndüren fonksiyon
+function A=DizidekiNeagtifleriPozitifeCevir(A)
+diziBoyutu=length(A);
+for i=1:diziBoyutu;
+    if A(i)<0
+        A(i)=A(i)*(-1);
+    end
+end
