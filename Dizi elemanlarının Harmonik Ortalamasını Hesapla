@@ -1,0 +1,7 @@
+function ortalama=DizininHarmonikOrtalamasiniHesapla(A)
+toplam=0;
+diziBoyutu=length(A);
+for i=1:diziBoyutu
+    toplam=toplam+(1/A(i));
+end
+ortalama=diziBoyutu/toplam;
