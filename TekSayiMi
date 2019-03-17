@@ -1,0 +1,11 @@
+function sonuc = TekSayiMi( sayi )
+%CİFTSAYİMİ Summary of this function goes here
+if mod(sayi,2)==0
+    sonuc=0;
+else
+    sonuc=1;
+end
+
+
+end
+
