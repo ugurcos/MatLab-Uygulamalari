@@ -1,0 +1,9 @@
+function sayac=DzidekiCiftlerinSayisiniHesapla(A)
+sayac=0;
+diziBoyutu=length(A);
+for i=1:diziBoyutu
+    if CiftSayiMi(A(i)) %geriye 1/0 döndüren fonksiyon
+        sayac=sayac+1;
+    end
+end
+end
